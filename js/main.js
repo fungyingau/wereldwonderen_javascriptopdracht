@@ -4,8 +4,8 @@ window.onload = (function() {
    
     var linkData = [
         { text: 'Home', href: '/' },
-        { text: 'Modern', href: '/pages/modern.html' },
-        { text: 'Klassiek', href: '/pages/klassiek.html' }
+        { text: 'Modern', href: 'wereldwonderen_javascriptopdracht/pages/modern.html' },
+        { text: 'Klassiek', href: 'wereldwonderen_javascriptopdracht/pages/klassiek.html' }
     ];
 
     imageMapResize();
