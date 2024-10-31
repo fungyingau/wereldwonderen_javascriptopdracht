@@ -14,7 +14,7 @@ window.onload = (function() {
     initWonderen();  
 });
 
-// console.log(imageMapResize());
+console.log(imageMapResize());
 
 // standaard melding vewijderen.
 var jsDis = document.querySelector(".js-disabled");
