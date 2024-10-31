@@ -1,0 +1,689 @@
+@charset "utf-8";
+
+/* Noto Serif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+/* OpenSans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* fontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* Philisopher */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html{
+    font-size: 100%;
+}
+
+body{
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: #f1ede1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #000 2px 2px 5px;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fff;
+}
+
+h2, h3, h4, p {
+    color: #3e3e3e;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h2, h3, h4 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.js-disabled {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1.8em;
+}
+
+header {
+    background-image: linear-gradient(#8dcac3, #f1ede1);
+}
+
+nav {
+    height: 4em;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul {
+    font-family: "Philosopher", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    color: #fff;
+    text-shadow: #000 2px 1px 4px;
+}
+
+nav ul li:hover {
+    color: #d1dc9f
+}
+
+header ul li.active {
+    color: #d1dc9f
+}
+
+ul li a:visited {
+    color: inherit;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/halong_bay_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    width: 100%;
+    height: 35vh;
+}
+
+#map_container_mw {
+    position: relative;
+}
+
+div.red {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+main.container {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+/* red pin */
+#map_container_mw img.pin_red {
+    width: 4%;
+    position: absolute;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+/* positions red pins */
+#map_container_mw img#pin1 {
+    margin-top: 13%;
+    left: 24%;
+}
+#map_container_mw img#pin2 {
+    margin-top: 24%;
+    left: 28%;
+}
+#map_container_mw img#pin3 {
+    margin-top: 27%;
+    left: 36%;
+}
+#map_container_mw img#pin4 {
+    margin-top: 6%;
+    left: 51%;
+}
+#map_container_mw img#pin5 {
+    margin-top: 10%;
+    left: 58%;
+}
+#map_container_mw img#pin6 {
+    margin-top: 11%;
+    left: 69%; 
+}
+#map_container_mw img#pin7 {
+    margin-top: 7%;
+    left: 78%;
+}
+
+/* blue pin */
+#map_container_kw img.pin_blue {
+    width: 4%;
+    position: absolute;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+/* positions blue pins */
+#map_container_kw img#pin8 {
+    margin-top: 19%;
+    left: 16%;
+}
+#map_container_kw img#pin9 {
+    margin-top: 13%;
+    left: 25%;
+}
+#map_container_kw img#pin10 {
+    margin-top: 18%;
+    left: 27.5%;
+}
+#map_container_kw img#pin11 {
+    margin-top: 23%;
+    left: 30%;
+}
+#map_container_kw img#pin12 {
+    margin-top: 37%;
+    left: 35%;
+}
+#map_container_kw img#pin13 {
+    margin-top: 41%;
+    left: 38%;
+}
+#map_container_kw img#pin14 {
+    margin-top: 28%;
+    left: 64.5%;
+}
+
+#map_container_mw img, #map_container_kw img {
+    width: 100%;
+    height: 100%; 
+}
+
+#map_container_mw, #map_container_kw {
+    border:#f1ede1 solid 7px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#map_container_mw::before, #map_container_kw::before {
+    content: "";
+    position: absolute;
+    top: -28%;
+    left: -26%;
+    width: 152%;
+    height: 158%;
+    background: radial-gradient(ellipse at center, transparent 0%, transparent 40%, #f1ede1 47%);
+    pointer-events: none;
+}
+#map_container_kw::before {
+    top: -26%;
+    left: -22%;
+    width: 145%;
+    height: 148%;
+}
+
+main ul {
+    list-style: disc;
+    display: block;
+    margin: 0.3em auto;
+}
+
+main span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: #000 2px 1px 5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    margin-top: 22%;
+    pointer-events: none;
+}
+
+.mainKlassiek span {
+    margin-top: -38%;
+}
+
+article {
+    padding: 1em;
+    margin: 0.8em;
+    background-color: #fff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    width: 70vw;
+	height: 2px;
+	background-color:#8dcac3;
+	margin: 0.6em auto;
+    position: relative;  
+}
+
+.line::after {
+    content: "";
+    width: 70vw;
+    height: 1px;background-color:#969696;
+    top: 2px;
+    position: absolute;
+}
+
+p {
+    margin: 0.4em 0;
+    font-size: 0.9em;
+}
+
+#wonderModern, #wonderKlassiek {
+    margin-top: 0.3em;
+}
+
+
+#wonderModern p, #wonderKlassiek p {
+    text-align: center;
+}
+
+#buttons {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a.button {
+    color: #4a4a4a;
+    padding: 0.7em 2em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: center;
+    background-color: #8dcac3;
+    display: block;
+    width: 50vw;
+    margin: 0.4em auto 1.2em auto;
+    border-radius: 5px;
+    border: #8f8f8f solid 1px;
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.2);
+    transition: 0.5s;
+}
+
+a.button:hover {
+    box-shadow: 0px 6px 8px rgba(0,0,0, 0.35);
+    background-color: #d1dc9f;
+}
+
+i {  
+    font-size: 1.2em; 
+    color: #8dcac3;
+    font-family: 'FontAwesome';
+    font-style: normal;
+    padding: 0 0.3em;
+}
+
+footer {
+    background-image: linear-gradient(#f1ede1,#8dcac3);
+    height: 3.2em;   
+}
+
+footer nav {
+    height: 2em;  
+}
+
+footer nav ul {
+    font-size: 0.9em;
+    justify-content: space-evenly;
+    max-width: 300px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 250ms ease-in-out;   
+}
+
+#overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* pop-up */
+.dynamicPopup {
+    display: none;
+    position:absolute;
+    top: 4em;
+    left: 0%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 720px;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+.dynamicPopup.show {
+    display: block;
+}
+
+.dynamicPlaatje img {
+    margin: 0 auto;
+}
+
+#omschrijving{
+    font-size: 0.8em;
+}
+
+.show button {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+}
+
+body.error {
+    background-color: #f1ede1;
+}
+
+.errorContainer {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.errorContainer img {
+    width: 100%;
+    margin: 0 auto 1.4em auto;
+}
+
+.errorContainer p {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0.5em;
+    font-size: 1em;
+    text-align: center;
+} 
+
+.errorContainer a {
+    text-transform: uppercase;
+    color:#3e3e3e;
+    font-weight: 600;
+}
+
+.errorContainer a:hover {
+    color: #8dcac3;
+    display: block;
+}
+
+
+/****************** tablet start ******************/
+@media screen and (min-width:768px) {
+    nav {
+        height: 4.6em;
+    }
+
+    nav ul li {
+        font-size: 1.4em;
+    }   
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:scroll ;
+    }
+
+    body.home {
+        background-image: url("../img/home_sand_bg.jpg");
+    }
+
+    body.modern {
+        background-image: url("../img/modern_water_bg.jpg");
+        background-blend-mode: luminosity;
+    }
+
+    body.klassiek {
+        background-image: url("../img/klassiek_wood_bg.jpg");
+        background-size: cover;      
+    }
+
+    .wrapper {
+        background-color: #f1ede1;
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    main span {
+        margin-top: 21%;
+        font-size: 1.2em;
+    }    
+   
+    main div.container:nth-child(2) {
+        margin: 1em;
+        margin-top: 1.6em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    #wonderModern, #wonderKlassiek {
+        margin: 1.2em;
+        margin-top: 0.6em;
+    }
+
+    article {
+        padding: 1.8em;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;   
+    }
+
+    a.button {
+        width: 28vw;
+        margin-top: 1em;
+        padding-top:1em;
+        padding-bottom: 1em;
+    }
+    
+    #map_container_mw img, #map_container_kw img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .popup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav ul {
+        
+        justify-content: center;
+    }
+    
+    footer nav ul li {
+        font-size: 1em;
+        padding: 0 1.2em;
+    }
+
+    .dynamicPopup {
+        top: 4.6em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #omschrijving{
+        font-size: 0.9em;
+    }
+}
+/****************** desktop start ******************/
+@media screen and (min-width:1200px) {
+    .wrapper {
+        width: 85%;
+        max-width: 1280px;
+    }
+
+    nav {
+        height: 5em;
+    }
+
+    h1 {
+        font-size: 2.1em;
+    }
+
+    nav ul li {
+        font-size: 1.6em;
+    }
+
+    #hero {
+        background-position: 50% 25%;
+        background-size: cover;
+        width: 100%;
+        max-width: 1280px;
+        height: 48vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        max-width: 1280px;
+    }
+
+    main span {
+        font-size: 1.8em;
+    }  
+
+    main div:first-child {
+        grid-column: 1/3;
+        font-size: 1em;
+    }
+ 
+    main div:nth-child(2) {
+        grid-column: 1/2;
+        width: 46vw;
+        margin-left: 2em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .mainModern div:nth-child(2),
+    .mainKlassiek div:nth-child(2) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mainModern, .mainKlassiek {
+        display: block;
+    }
+
+    .line {
+        width: 30vw;
+        margin: 1em auto;
+    }
+
+    .line::after {
+        width: 30vw;
+    }
+
+    #intro {
+        padding: 1.6em;
+        width: 42vw;
+        max-width: 840px;
+    }
+
+    #buttons {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 2em;
+    }
+
+    a.button {
+        width: 68%;
+        font-size: 1.2em;
+    }
+
+    #buttons div.lineB {
+        width: 20vw;
+        max-width: 220px;
+        height: 2px;
+        background-color:#8dcac3;
+        margin: 2em auto;
+        position: relative;  
+    }
+
+    #buttons div.lineB::after {
+        content: "";
+        width: 20vw;
+        max-width: 220px;
+        height: 1px;
+        top: 2px;
+        background-color:#969696;
+        position: absolute;
+    }
+    
+    footer p{
+        margin-top: 0;;
+    }
+
+    .dynamicPopup {
+        top: 5em;
+    }
+}
