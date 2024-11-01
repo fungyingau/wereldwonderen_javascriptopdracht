@@ -3,9 +3,9 @@ var d = document;
 window.onload = (function() {   
    
     var linkData = [
-        { text: 'Home', href: '/' },
-        { text: 'Modern', href: 'wereldwonderen_javascriptopdracht/pages/modern.html' },
-        { text: 'Klassiek', href: 'wereldwonderen_javascriptopdracht/pages/klassiek.html' }
+        { text: 'Home', href: './index.html' },
+        { text: 'Modern', href: 'https://fungyingau.github.io/wereldwonderen_javascriptopdracht/pages/modern.html' },
+        { text: 'Klassiek', href: 'https://fungyingau.github.io/wereldwonderen_javascriptopdracht/pages/klassiek.html' }
     ];
 
     imageMapResize();
